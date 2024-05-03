@@ -1,0 +1,127 @@
+/* Reset default margin and padding */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for header */
+/* Styling for header */
+header {
+    display: flex;
+    justify-content: space-between; /* Align items with space between */
+    align-items: center; /* Center items vertically */
+    background-color: #1560BD; /* Jeopardy blue */
+    color: #FFD700; /* Jeopardy gold */
+    font-size: 32px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for h1 */
+header h1 {
+    margin: 0 auto; /* Center the h1 horizontally */
+}
+
+/* Styling for score display */
+#score-display {
+    font-size: 20px;
+    color: #FFD700; /* Jeopardy gold */
+    margin-right:25px;
+    font-weight: bold;
+}
+
+
+/* Styling for main content */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Adjust as needed */
+    margin: 0;
+}
+
+/* Styling for game board */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns for categories */
+    gap: 10px;
+    width: 90%; /* Adjust as needed */
+    height: 90%; /* Adjust as needed */
+    max-width: 90%; /* Limit maximum width */
+    max-height: 90%; /* Limit maximum height */
+    overflow: auto; /* Enable scrolling if necessary */
+    padding: 20px; /* Add padding to create space around the game board */
+    box-sizing: border-box; /* Include padding in the total width and height */
+}
+
+/* Styling for categories */
+.category {
+    background-color: #4682B4; /* Jeopardy dark blue */
+    color: #FFD700; /* Jeopardy gold */
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px; /* Adjust font size as needed */
+}
+
+/* Styling for questions */
+.question {
+    background-color: #1560BD; /* Jeopardy light blue */
+    color: white; /* White text */
+    font-weight: bold;
+    font-size: 38px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5%;
+    border: 5px solid #1560BD;
+    transition: all 0.5s ease-in-out; /* Add transition effect */
+}
+
+/* Styling for fullscreen question display */
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    color: white;
+    font-size: 24px;
+    padding: 125px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Enable scrolling if the question is too long */
+}
+
+/* Styling for answer options */
+.answer-options {
+    margin-top: 20px; /* Add margin between question and answer options */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option {
+    background-color: #4682B4; /* Jeopardy dark blue */
+    color: #FFD700; /* Jeopardy gold */
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px; /* Adjust font size as needed */
+    margin-top: 10px; /* Add margin between answer options */
+    cursor: pointer;
+    border-radius: 5px;
+    width: 50%;
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.option:hover {
+    background-color: #4169E1; /* Darker blue on hover */
+}
+
+
+
+
+
+
+
